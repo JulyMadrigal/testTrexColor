@@ -127,7 +127,7 @@ function draw() {
     
         
     //saltar quando a tecla espaço for pressionada
-    if((keyDown("SPACE") || touches.length > 0) && trex.y  >= height-110) {
+    if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-110) {
       somDePulo.play( );
       trex.velocityY = -12;
       touches = [];
